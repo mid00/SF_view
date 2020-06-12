@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>能效展示</title>
+<!--    <link rel="stylesheet" href="./static/plugin/bootstrap-3.3.7/css/bootstrap.min.css">-->
+
+    <link rel="stylesheet" href="./static/plugin/element-ui/index.css">
+    <link rel="stylesheet" href="./static/plugin/layui-v2.5.5/layui/css/layui.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/sidenav.min.css">
+    <script>
+        var pageTimer=[];       //定义全局定时任务保存定时器
+
+    </script>
+
+</head>
+<body>
+    <div class="index-content" id="app">
+        <head-top></head-top>
+        <right-menu></right-menu>
+        <router-view></router-view>
+    </div>
+</body>
+</html>
+
+<!--基础框架-->
+<script src="./static/js/vue.js"></script>
+<script src="./static/js/vue-router.js"></script>
+<script src="./static/js/jquery1.12.4.min.js"></script>
+<script src="./static/js/sidenav.min.js"></script>
+<script src="./static/plugin/element-ui/index.js"></script>
+<script src="./static/plugin/layui-v2.5.5/layui/layui.all.js"></script>
+<script src="./static/plugin/rollSlide.li.js"></script>
+<script src="./static/plugin/highcharts/highcharts.js" type="text/javascript"></script>
+<script src="./static/plugin/highcharts/modules/wordcloud.js"></script>
+<script src="./static/plugin/echarts.min.js"></script>
+<!--<script src="./static/plugin/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+<!--基础框架-->
+
+<!--公共组件开始引入-->
+<script src="./component/common/head-top.js"></script>
+<script src="./component/common/right-menu.js"></script>
+<script src="./component/common/common.js"></script>
+
+<!--公共组件结束引入-->
+
+<!--默认首页父组件-->
+<script src="./component/component-default-page.js"></script>
+
+<!--默认首页子组件-->
+<script src="./component/component-default.js"></script>
+
+
+
+<!--台席页面组件-->
+<script src="./component/component-position-page.js"></script>
+<script src="./component/component-position.js"></script>
+
+<!--业务查询页面组件-->
+<script src="./component/component-business-page.js"></script>
+<script src="./component/component-business.js"></script>
+
+
+<!--业务查询页面组件-->
+<script src="./component/component-employee-page.js"></script>
+<script src="./component/component-employee.js"></script>
+
+<!--热点事件页面组件-->
+<script src="./component/component-hotitem-page.js"></script>
+<script src="./component/component-hotitem.js"></script>
+
+
+<!--平均办理页面组件-->
+<script src="./component/component-avghandle-page.js"></script>
+<script src="./component/component-avghandle.js"></script>
+
+
+<!--评价满意率统计-->
+<script src="./component/component-opinion-page.js"></script>
+<script src="./component/component-opinion.js"></script>
+
+<!--部门办结统计-->
+<script src="./component/component-departover-page.js"></script>
+<script src="./component/component-departover.js"></script>
+
+
+
+<script src="./route/route.js"></script>
+
+<script>
+    new Vue({
+        el:"#app",
+        router,
+        data(){
+          return {
+
+          }
+        }
+    })
+
+    $('[data-sidenav]').sidenav()
+console.log(13333)
+
+
+
+</script>
